@@ -1,6 +1,6 @@
 import {DoctorStrange as Exp} from "@/consts/expansions";
 import {DoctorStrange} from "@/consts/heroes";
-import {generateAllyCard, generateExhaustedCardInPlay} from "@/lib/upgrades";
+import {generateAllyCard, generateUpgradeCard, generateExhaustedCardInPlay} from "@/lib/upgrades";
 
 
 export const Sanctum = generateExhaustedCardInPlay({
@@ -21,6 +21,25 @@ export const Cloak = generateExhaustedCardInPlay({
 	category: 'Heroic',
 	article: '',
 	pronoun: 'it',
+})
+
+export const Eye = generateExhaustedCardInPlay({
+	name: 'The power of time',
+	card: `Eye of Agamotto`,
+	requires: Exp.name,
+	requiresHero: DoctorStrange.name,
+	category: 'Heroic',
+	article: '',
+	pronoun: 'it',
+})
+
+export const Sorcerer = generateUpgradeCard({
+	name: 'The One',
+	card: `The Sorcerer Supreme`,
+	requires: Exp.name,
+	requiresHero: DoctorStrange.name,
+	category: 'Heroic',
+	article: '',
 })
 
 export const Spellmaster : any = {
@@ -75,5 +94,7 @@ export const Upgrades = [
 	Spellmaster,
 	Sanctum,
 	Cloak,
-	Wong
+	Wong,
+	Eye,
+	Sorcerer,
 ]

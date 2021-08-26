@@ -17,6 +17,17 @@ export const Bow = generateUpgradeCard({
 	article: '',
 })
 
+export const Expert = generateUpgradeCard({
+	name: 'Practice makes perfect',
+	card: "Expert Marksman",
+	requires: RiseOfRedSkull.name,
+	requiresHero: Hawkeye.name,
+	category: "Heroic",
+	article: '',
+	copies: 2,
+	exhausted: true,
+})
+
 export const Quiver = generateExhaustedCardInPlay({
 	name: 'Quiver Strap',
 	card: `Hawkeye's Quiver`,
@@ -77,5 +88,6 @@ export const Upgrades : Upgrade[] = [
 	Quiver,
 	Bow,
 	Mockingbird,
-	Arrows
+	Arrows,
+	Expert,
 ]

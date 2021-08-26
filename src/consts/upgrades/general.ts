@@ -1,5 +1,5 @@
-import {CoreSet} from "@/consts/expansions";
-import {generateExhaustedCardInPlay, levelUpMessageIncrease} from "@/lib/upgrades";
+import {CoreSet, ExpansionsMap, } from "@/consts/expansions";
+import {generateAllyCard, generateCounterCardInPlay, generateUpgradeCard,generateExhaustedCardInPlay,levelUpMessageIncrease} from "@/lib/upgrades";
 import {Upgrade, UpgradeCategory} from "@/types/upgrade";
 
 export const Helicarrier = generateExhaustedCardInPlay({
@@ -16,8 +16,68 @@ export const AvengersMansion = generateExhaustedCardInPlay({
 	requires: CoreSet.name,
 	pronoun: 'it',
 	category: 'General',
-	maxLevel: 1,
 	article: 'an'
+})
+
+export const Downtime = generateUpgradeCard({
+	name: 'Take Five',
+	card: 'Down Time',
+	requires: ExpansionsMap['Ms. Marvel'].name,
+	category: 'General',
+	attached: true,
+})
+
+export const Endurance = generateUpgradeCard({
+	name: 'Scrappy',
+	card: 'Endurance',
+	requires: ExpansionsMap['Ms. Marvel'].name,
+	category: 'General',
+	attached: true,
+})
+
+export const Awareness = generateExhaustedCardInPlay({
+	name: 'Strength of the mind',
+	card: 'Enhanced Awareness',
+	requires: ExpansionsMap['Captain America'].name,
+	pronoun: 'it',
+	category: 'General',
+})
+
+export const Physique = generateExhaustedCardInPlay({
+	name: 'Strength of the body',
+	card: 'Enhanced Physique',
+	requires: ExpansionsMap['Thor'].name,
+	pronoun: 'it',
+	category: 'General',
+})
+
+export const Reflexes = generateExhaustedCardInPlay({
+	name: 'Speedy',
+	card: 'Enhanced Reflexes',
+	requires: ExpansionsMap['Ms. Marvel'].name,
+	pronoun: 'it',
+	category: 'General',
+})
+
+export const Pistol = generateCounterCardInPlay({
+	name: 'Packin Heat',
+	card: 'Plasma Pistol',
+	requires: ExpansionsMap['Venom'].name,
+	pronoun: 'it',
+	category: 'General',
+	extraCounters: {
+		1: 0,
+		2: 1,
+		3: 2
+	},
+})
+
+export const Exercise = generateExhaustedCardInPlay({
+	name: 'Power of Friendship',
+	card: 'Team-Building Exercise',
+	requires: ExpansionsMap['Ant-Man'].name,
+	pronoun: 'it',
+	category: 'General',
 })
 
 export const AlwaysPrepared : Upgrade = {
@@ -52,26 +112,7 @@ export const StarkGadget = {
 	maxLevel: 3,
 	category: 'General' as UpgradeCategory
 }
-/*
 
-export const HeroicConditioning = {
-	name: `Heroic Conditioning`,
-	numHitPoints (level: number) {
-		return 2 + (level * 3)
-	},
-	description () {
-		return `You get +${this.numHitPoints(this.level)} maximum hit points.`
-	},
-	requires: null,
-	levelUpMessage () {
-		return levelUpMessageIncrease(this.numHitPoints(this.level), this.numHitPoints(this.level+1), 'hit point')
-	},
-	level: 1,
-	category: 'General' as UpgradeCategory
-	// TODO: Add a function that will actually change the startingHP value of the player
-	//  maybe some kind of whenChosen() hook? and a whenLeveled() hook?
-}
-*/
 
 export const KnowYourEnemy = {
 	name: `Know Your Enemy`,
@@ -91,4 +132,18 @@ export const KnowYourEnemy = {
 	category: 'General' as UpgradeCategory
 }
 
-export const Upgrades = [KnowYourEnemy, Helicarrier, AvengersMansion, StarkGadget, AlwaysPrepared]
+export const Upgrades = [
+	KnowYourEnemy,
+	Helicarrier,
+	AvengersMansion,
+	StarkGadget,
+	AlwaysPrepared,
+	Downtime,
+	Endurance,
+	Awareness,
+	Physique,
+	Reflexes,
+	Pistol,
+	Exercise,
+	
+	]

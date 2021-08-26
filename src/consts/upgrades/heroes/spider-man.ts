@@ -1,49 +1,45 @@
 import {CoreSet} from "@/consts/expansions";
 import {IronMan, SpiderMan} from "@/consts/heroes";
-import {generateExhaustedCardInPlay, generateUpgradeCard} from "@/lib/upgrades";
+import {generateAllyCard, generateCounterCardInPlay, generateUpgradeCard,generateExhaustedCardInPlay} from "@/lib/upgrades";
 
-type SpidyUpgrade = {
-	article: string,
-	card: string
-	name: string
-	pronoun: string
-	they?: string
-}
-
-function upgrade (def: SpidyUpgrade) {
-	return generateExhaustedCardInPlay({
-		card: def.card,
-		name: def.name,
-		pronoun: def.pronoun,
-		requires: CoreSet.name,
-		requiresHero: SpiderMan.name,
-		category: 'Heroic',
-		article: def.article,
-		they: def.they
-	})
-}
-
-export const AuntMay = upgrade({
-	card: 'Aunt May',
-	name: 'Favorite Nephew',
+export const AuntMay = generateExhaustedCardInPlay({
+	name: 'Family',
+	card: `Aunt May`,
+	requires: CoreSet.name,
+	requiresHero: SpiderMan.name,
+	category: 'Heroic',
 	pronoun: 'her',
-	article: '',
 	they: 'She',
 })
 
-export const BlackCat = upgrade({
+
+export const WebShooter = generateUpgradeCard({
+	name: 'Go We Go!',
+	card: `WebShooter`,
+	requires: CoreSet.name,
+	requiresHero: SpiderMan.name,
+	category: 'Heroic',
+	copies: 2,
+	exhausted: true,
+})
+
+export const BlackCat = generateAllyCard({
+	name: 'Felicia',
 	card: 'Black Cat',
-	name: 'Cat Person',
 	pronoun: 'her',
-	article: '',
-	they: 'She',
-})
-
-export const WebShooter = upgrade({
-	card: 'Web Shooter',
-	name: 'Sticky Shooters',
-	pronoun: 'it',
-	article: 'a',
+	requires: CoreSet.name,
+	requiresHero: SpiderMan.name,
+	levels: [{
+		damage: 1,
+		exhausted: true,
+	}, {
+		damage: 1,
+		exhausted: false,
+	}, {
+		damage: 0,
+		exhausted: false,
+	}],
+	category: 'Heroic',
 })
 
 export const Upgrades = [

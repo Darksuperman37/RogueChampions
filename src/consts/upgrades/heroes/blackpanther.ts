@@ -35,5 +35,10 @@ Tac.name = 'Ready Mind'
 export const Suit = upgrade('Vibranium Suit')
 Suit.name = 'Dress for Success'
 
-export const Upgrades = [TheGoldenCity, EnergyDaggers, Claws, Tac, Suit]
+export const Upgrades = [
+	TheGoldenCity, 
+	EnergyDaggers, 
+	Claws, 
+	Tac, 
+	Suit]
 

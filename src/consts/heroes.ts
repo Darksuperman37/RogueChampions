@@ -3,7 +3,7 @@ import {CoreSet, RiseOfRedSkull} from "@/consts/expansions";
 
 export const BlackPanther : Hero = {
 	name: 'Black Panther',
-	requires: CoreSet.name,
+	requires: 'Core Set',
 	startingHP: 11,
 }
 
@@ -21,7 +21,7 @@ export const CaptainAmerica : Hero = {
 
 export const CaptainMarvel : Hero = {
 	name: 'Captain Marvel',
-	requires: CoreSet.name,
+	requires: 'Core Set',
 	startingHP: 12,
 }
 
@@ -34,7 +34,7 @@ export const DoctorStrange : Hero = {
 export const Hawkeye : Hero = {
 	name: 'Hawkeye',
 	startingHP: 9,
-	requires: RiseOfRedSkull.name,
+	requires: 'The Rise of Red Skull',
 }
 
 export const Hulk : Hero = {
@@ -45,7 +45,7 @@ export const Hulk : Hero = {
 
 export const IronMan : Hero = {
 	name: 'Iron Man',
-	requires: CoreSet.name,
+	requires: 'Core Set',
 	startingHP: 9,
 }
 
@@ -57,13 +57,13 @@ export const MsMarvel : Hero = {
 
 export const SheHulk : Hero = {
 	name: 'She-Hulk',
-	requires: CoreSet.name,
+	requires: 'Core Set',
 	startingHP: 15,
 }
 
 export const SpiderMan : Hero = {
 	name: 'Spider-Man',
-	requires: CoreSet.name,
+	requires: 'Core Set',
 	startingHP: 10,
 }
 
@@ -71,7 +71,7 @@ export const SpiderMan : Hero = {
 export const SpiderWoman : Hero = {
 	name: 'Spider-Woman',
 	startingHP: 11,
-	requires: RiseOfRedSkull.name,
+	requires: 'The Rise of Red Skull',
 }
 
 
@@ -87,6 +87,53 @@ export const ScarletWitch : Hero = {
 	startingHP: 10,
 }
 
+export const Quicksilver : Hero = {
+	name: 'Quicksilver',
+	requires: 'Quicksilver',
+	startingHP: 9,
+}
+export const Antman : Hero = {
+	name: 'Ant-Man',
+	requires: 'Ant-Man',
+	startingHP: 12,
+}
+export const Wasp : Hero = {
+	name: 'Wasp',
+	requires: 'Wasp',
+	startingHP: 11,
+}
+
+export const Starlord : Hero = {
+	name: 'Star-Lord',
+	requires: 'Starlord',
+	startingHP: 10,
+}
+export const Gamora : Hero = {
+	name: 'Gamora',
+	requires: 'Gamora',
+	startingHP: 10,
+}
+export const Drax : Hero = {
+	name: 'Drax',
+	requires: 'Drax',
+	startingHP: 14,
+}
+export const Rocket : Hero = {
+	name: 'Rocket Raccoon',
+	requires: 'The Galaxys Most Wanted',
+	startingHP: 9,
+}
+export const Groot : Hero = {
+	name: 'Groot',
+	requires: 'The Galaxys Most Wanted',
+	startingHP: 10,
+}
+export const Venom : Hero = {
+	name: 'Venom',
+	requires: 'Venom',
+	startingHP: 12,
+}
+
 export const HeroesMap : Record<string, Hero> = {
 	[BlackPanther.name]: BlackPanther,
 	[BlackWidow.name]: BlackWidow,
@@ -97,11 +144,19 @@ export const HeroesMap : Record<string, Hero> = {
 	[Hulk.name]: Hulk,
 	[IronMan.name]: IronMan,
 	[MsMarvel.name]: MsMarvel,
-	[ScarletWitch.name]: ScarletWitch,
 	[SheHulk.name]: SheHulk,
+	[Thor.name]: Thor,
 	[SpiderMan.name]: SpiderMan,
 	[SpiderWoman.name]: SpiderWoman,
-	[Thor.name]: Thor,
+	[ScarletWitch.name]: ScarletWitch,
+	[Quicksilver.name]: Quicksilver,
+	[Antman.name]: Antman,
+	[Starlord.name]: Starlord,
+	[Gamora.name]: Gamora,
+	[Rocket.name]: Rocket,
+	[Groot.name]: Groot,
+	[Drax.name]: Drax,
+	[Venom.name]: Venom,
 }
 
 export const HeroesList = Object.keys(HeroesMap).

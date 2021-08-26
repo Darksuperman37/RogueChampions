@@ -1,6 +1,6 @@
 import {CoreSet} from "@/consts/expansions";
 import {CaptainMarvel} from "@/consts/heroes";
-import {generateCounterCardInPlay, generateUpgradeCard} from "@/lib/upgrades";
+import {generateAllyCard, generateCounterCardInPlay, generateUpgradeCard,generateExhaustedCardInPlay} from "@/lib/upgrades";
 
 export const CosmicFlight = generateUpgradeCard({
 	name: 'Space Pilot',
@@ -36,4 +36,13 @@ export const CaptainMarvelsHelmet = generateUpgradeCard({
 	category: "Heroic"
 })
 
-export const Upgrades = [CosmicFlight, EnergyChannel, CaptainMarvelsHelmet]
+export const Station = generateExhaustedCardInPlay({
+	name: 'Home Base',
+	card: "Alpha FLight Station",
+	requires: CoreSet.name,
+	requiresHero: CaptainMarvel.name,
+	category: "Heroic",
+	pronoun: 'it',
+})
+
+export const Upgrades = [CosmicFlight, EnergyChannel, CaptainMarvelsHelmet, Station]

@@ -4,30 +4,8 @@ import {DF_STEP_LARGE, DF_STEP_SMALL, DF_BASE, DF_STEP_MED} from "@/consts/diffi
 // Encounter sets marked as "boss: true" cannot be used as modular sets
 // Their difficulty is 0 because the villain's difficulty is set in the villains.ts file
 
-// Helper to create an encounter quickly
-function quick(name: string, diff = DF_STEP_SMALL) : EncounterSet {
-	const encounter = {
-		name: name,
-		difficulty: diff,
-		boss: false,
-	}
-	EncounterSetsMap[name] = encounter
-	EncounterSetsList.push(encounter)
-	return encounter
-}
 
-// Helper to quickly create a villain
-function boss(name: string, diffBonus = 0) : EncounterSet {
-	const up = {
-		name: name,
-		difficulty: DF_BASE + diffBonus,
-		boss: true,
-	}
-	EncounterSetsMap[name] = up
-	EncounterSetsList.push(up)
-	return up
-}
-
+//Villains
 export const Ultron : EncounterSet = {
 	name: 'Ultron',
 	difficulty: 0,
@@ -48,25 +26,90 @@ export const Rhino : EncounterSet = {
 
 export const WreckingCrew : EncounterSet = {
 	name: 'Wrecking Crew',
-	difficulty: DF_BASE + DF_STEP_SMALL,
+	difficulty: 0,
 	boss: true,
 }
 
 export const RiskyBusiness : EncounterSet = {
 	name: 'Risky Business',
-	difficulty: DF_STEP_LARGE,
+	difficulty: 0,
 	boss: true
 }
 
 export const MutagenFormula : EncounterSet = {
 	name: 'Mutagen Formula',
-	difficulty: DF_STEP_SMALL,
+	difficulty: 0,
 	boss: true
 }
 
+export const Crossbones : EncounterSet = {
+	name: 'Crossbones',
+	difficulty: 0,
+	boss: true
+}
+
+export const AbsorbingMan : EncounterSet = {
+	name: 'Absorbing Man',
+	difficulty: 0,
+	boss: true
+}
+
+export const Taskmaster : EncounterSet = {
+	name: 'Taskmaster',
+	difficulty: 0,
+	boss: true
+}
+
+export const Zola : EncounterSet = {
+	name: 'Zola',
+	difficulty: 0,
+	boss: true
+}
+
+export const RedSkull : EncounterSet = {
+	name: 'Red Skull',
+	difficulty: 0,
+	boss: true
+}
+
+export const Kang : EncounterSet = {
+	name: 'Kang',
+	difficulty: 0,
+	boss: true
+}
+
+export const BrotherhoodofBadoon : EncounterSet = {
+	name: 'Brotherhood of Badoon',
+	difficulty: 0,
+	boss: true
+}
+
+export const InfiltratetheMuseum : EncounterSet = {
+	name: 'Infiltrate the Museum',
+	difficulty: 0,
+	boss: true
+}
+export const EscapetheMuseum : EncounterSet = {
+	name: 'Escape the Museum',
+	difficulty: 0,
+	boss: true
+}
+export const Nebula : EncounterSet = {
+	name: 'Nebula',
+	difficulty: 0,
+	boss: true
+}
+export const Ronan : EncounterSet = {
+	name: 'Ronan',
+	difficulty: 0,
+	boss: true
+}
+
+
+//Modular Sets
 export const GoblinGimmicks : EncounterSet = {
 	name: 'Goblin Gimmicks',
-	difficulty: DF_STEP_LARGE,
+	difficulty: DF_STEP_SMALL,
 	boss: false
 }
 
@@ -78,7 +121,13 @@ export const TheDoomsdayChair : EncounterSet = {
 
 export const LegionOfHydra : EncounterSet = {
 	name: 'Legion of Hydra',
-	difficulty: DF_STEP_SMALL,
+	difficulty: DF_STEP_LARGE,
+	boss: false
+}
+
+export const UnderAttack : EncounterSet = {
+	name: 'Under Attack',
+	difficulty: DF_STEP_LARGE,
 	boss: false
 }
 
@@ -100,42 +149,165 @@ export const MastersOfEvil : EncounterSet = {
 	boss: false
 }
 
+export const Anachronauts : EncounterSet = {
+	name: 'Anachronauts',
+	difficulty: DF_STEP_LARGE,
+	boss: false
+}
+
+export const MasterofTime : EncounterSet = {
+	name: 'Master of Time',
+	difficulty: DF_STEP_MED,
+	boss: false
+} 
+export const Temporal : EncounterSet = {
+	name: 'Temporal',
+	difficulty: DF_STEP_SMALL,
+	boss: false
+}
+
+export const HydraAssault  : EncounterSet = {
+	name: 'Hydra Assault',
+	difficulty: DF_STEP_MED,
+	boss: false
+}
+export const WeaponMaster : EncounterSet = {
+	name: 'Weapon Master',
+	difficulty: DF_STEP_MED,
+	boss: false
+}
+export const HydraPatrol  : EncounterSet = {
+	name: 'Hydra Patrol',
+	difficulty: DF_STEP_MED,
+	boss: false
+}
+export const ExperimentalWeapons  : EncounterSet = {
+	name: 'Experimental Weapons',
+	difficulty: DF_STEP_MED,
+	boss: false
+}
+
+export const MessofThings  : EncounterSet = {
+	name: 'A Mess of Things',
+	difficulty: DF_STEP_MED,
+	boss: false
+}
+
+export const PowerDrain  : EncounterSet = {
+	name: 'Power Drain',
+	difficulty: DF_STEP_SMALL,
+	boss: false
+}
+
+export const RunningInterference  : EncounterSet = {
+	name: 'Running Intereference',
+	difficulty: DF_STEP_MED,
+	boss: false
+}
+
+export const BandofBadoon  : EncounterSet = {
+	name: 'Band of Badoon',
+	difficulty: DF_STEP_SMALL,
+	boss: false
+}
+
+export const GalacticArtifacts  : EncounterSet = {
+	name: 'Galactic Artifacts',
+	difficulty: DF_STEP_SMALL,
+	boss: false
+}
+
+export const KreeMilitants  : EncounterSet = {
+	name: 'Kree Militants',
+	difficulty: DF_STEP_SMALL,
+	boss: false
+}
+
+export const MenagerieMedley  : EncounterSet = {
+	name: 'Menagerie Medley',
+	difficulty: DF_STEP_LARGE,
+	boss: false
+}
+
+export const SpacePirates  : EncounterSet = {
+	name: 'Space Pirates',
+	difficulty: DF_STEP_MED,
+	boss: false
+}
+
+export const ShipCommand  : EncounterSet = {
+	name: 'Ship Command',
+	difficulty: DF_STEP_SMALL,
+	boss: false
+}
+
+export const BadoonHeadhunter  : EncounterSet = {
+	name: 'Badoon Headhunter',
+	difficulty: DF_STEP_SMALL,
+	boss: false
+}
+
+export const KreeFanatic  : EncounterSet = {
+	name: 'Kree Fanatic',
+	difficulty: DF_STEP_LARGE+DF_STEP_SMALL,
+	boss: false
+}
+
 export const EncounterSetsMap : Record<string, EncounterSet> = {
 	[Rhino.name]: Rhino,
 	[Klaw.name]: Klaw,
 	[Ultron.name]: Ultron,
+	[Kang.name]: Kang,
 
 	[WreckingCrew.name]: WreckingCrew,
 	[RiskyBusiness.name]: RiskyBusiness,
 	[MutagenFormula.name]: MutagenFormula,
-
-	[GoblinGimmicks.name]: GoblinGimmicks,
+	
+	[Crossbones.name]: Crossbones,
+	[AbsorbingMan.name]: AbsorbingMan,
+	[Taskmaster.name]: Taskmaster,
+	[Zola.name]: Zola,
+	[RedSkull.name]: RedSkull,
+	
+	[BrotherhoodofBadoon.name]: BrotherhoodofBadoon,
+	[InfiltratetheMuseum.name]: InfiltratetheMuseum,
+	[EscapetheMuseum.name]: EscapetheMuseum,
+	[Nebula.name]: Nebula,
+	[Ronan.name]: Ronan,
+	
 	[TheDoomsdayChair.name]: TheDoomsdayChair,
 	[LegionOfHydra.name]: LegionOfHydra,
 	[Expert.name]: Expert,
 	[BombScare.name]: BombScare,
 	[MastersOfEvil.name]: MastersOfEvil,
+	
+	[GoblinGimmicks.name]: GoblinGimmicks,
+	[RunningInterference.name]: RunningInterference,
+	[MessofThings.name]: MessofThings,
+	[PowerDrain.name]: PowerDrain,
+	[UnderAttack.name]: UnderAttack,
+	
+	[Anachronauts.name]: Anachronauts,
+	[MasterofTime.name]: MasterofTime,
+	[Temporal.name]: Temporal,
+	[KreeFanatic.name]: KreeFanatic,
+	
+	[HydraAssault.name]: HydraAssault,
+	[WeaponMaster.name]: WeaponMaster,
+	[HydraPatrol.name]: HydraPatrol,
+	[ExperimentalWeapons.name]: ExperimentalWeapons,
+	
+	[BandofBadoon.name]: BandofBadoon,
+	[GalacticArtifacts.name]: GalacticArtifacts,
+	[KreeMilitants.name]: KreeMilitants,
+	[MenagerieMedley.name]: MenagerieMedley,
+	[SpacePirates.name]: SpacePirates,
+	[ShipCommand.name]: ShipCommand,	
+	[BadoonHeadhunter.name]: BadoonHeadhunter,
 }
 
 export let EncounterSetsList = Object.keys(EncounterSetsMap).map(key => EncounterSetsMap[key])
 
-// KANG
-export const Kang = boss('Kang')
-export const Anachrona = quick('Anachronauts')
-export const MasterofTime = quick('Master of Time')
-export const Temporal  = quick('Temporal')
-
-// THE RISE OF RED SKULL
-export const HydraAssault = quick('Hydra Assault')
-export const WeaponMaster = quick('Weapon Master')
-export const HydraPatrol = quick('Hydra Patrol')
-export const ExperimentalWeapons = quick('Experimental Weapons', DF_STEP_MED)
-
-export const Crossbones = boss('Crossbones')
-export const AbsorbingMan = boss('Absorbing Man')
-export const Taskmaster = boss('Taskmaster')
-export const Zola = boss('Zola')
-export const RedSkull = boss('Red Skull')
 
 EncounterSetsList = EncounterSetsList.sort((a,b) => {
 	return a.name < b.name ? -1 : 1

@@ -1,60 +1,65 @@
-import {
-	BombScare,
-	LegionOfHydra,
-	MastersOfEvil,
-	TheDoomsdayChair,
-	Rhino,
-	Klaw,
-	Ultron,
-	GoblinGimmicks,
-	RiskyBusiness,
-	MutagenFormula,
-	HydraAssault,
-	HydraPatrol,
-	WeaponMaster,
-	ExperimentalWeapons,
-	EncounterSetsMap
-} from "@/consts/encountersets"
+import {EncounterSetsMap} from "@/consts/encountersets"
 import {Expansion} from "@/types/expansion";
 
+//Core/Campaign
 export const CoreSet : Expansion = {
 	name: 'Core Set',
 	encounterSets: [
-		TheDoomsdayChair.name,
-		MastersOfEvil.name,
-		LegionOfHydra.name,
-		BombScare.name,
-		Klaw.name,
-		Rhino.name,
-		Ultron.name
+		EncounterSetsMap['The Doomsday Chair'].name,
+		EncounterSetsMap['Masters of Evil'].name,
+		EncounterSetsMap['Legion of Hydra'].name,
+		EncounterSetsMap['Bomb Scare'].name,
+		EncounterSetsMap.Klaw.name,
+		EncounterSetsMap.Rhino.name,
+		EncounterSetsMap.Ultron.name
 	]
 }
 
 export const RiseOfRedSkull : Expansion = {
 	name: 'The Rise of Red Skull',
 	encounterSets: [
-		HydraAssault.name,
-		HydraPatrol.name,
-		WeaponMaster.name,
-		ExperimentalWeapons.name,
+		EncounterSetsMap['Hydra Assault'].name,
+		EncounterSetsMap['Hydra Patrol'].name,
+		EncounterSetsMap['Weapon Master'].name,
+		EncounterSetsMap['Experimental Weapons'].name,
+		EncounterSetsMap['Under Attack'].name,
 
-		// I gotta be honest here. I thought using the SetsMap to get the names
-		// would be good, but it isn't.
 		EncounterSetsMap.Crossbones.name,
-		'Absorbing Man',
+		EncounterSetsMap['Absorbing Man'].name,
 		EncounterSetsMap.Taskmaster.name,
 		EncounterSetsMap.Zola.name,
-		'Red Skull'
+		EncounterSetsMap['Red Skull'].name
 	]
 }
 
-// Bad guys
+export const GalaxysMostWanted : Expansion = {
+	name: 'The Galaxys Most Wanted',
+	encounterSets: [
+		EncounterSetsMap['Band of Badoon'].name,
+		EncounterSetsMap['Galactic Artifacts'].name,
+		EncounterSetsMap['Kree Militants'].name,
+		EncounterSetsMap['Menagerie Medley'].name,
+		EncounterSetsMap['Space Pirates'].name,
+		EncounterSetsMap['Ship Command'].name,
+		EncounterSetsMap['Badoon Headhunter'].name,
+
+		EncounterSetsMap['Brotherhood of Badoon'].name,
+		EncounterSetsMap['Infiltrate the Museum'].name,
+		EncounterSetsMap['Escape the Museum'].name,
+		EncounterSetsMap.Nebula.name,
+		EncounterSetsMap.Ronan.name,
+	]
+}
+//Villains
 export const GreenGoblin : Expansion = {
 	name: 'Green Goblin',
 	encounterSets: [
-		GoblinGimmicks.name,
-		RiskyBusiness.name,
-		MutagenFormula.name,
+		EncounterSetsMap['Goblin Gimmicks'].name,
+		EncounterSetsMap['Risky Business'].name,
+		EncounterSetsMap['Mutagen Formula'].name,
+		EncounterSetsMap['Power Drain'].name,
+		EncounterSetsMap['A Mess of Things'].name,
+		EncounterSetsMap['Running Intereference'].name
 	]
 }
 
@@ -63,7 +68,22 @@ export const WreckingCrew : Expansion = {
 	encounterSets: ['Wrecking Crew']
 }
 
+export const Kang : Expansion = {
+	name: "The Once and Future Kang",
+	encounterSets:[
+		EncounterSetsMap.Kang.name,
+		EncounterSetsMap.Temporal.name,
+		EncounterSetsMap.Anachronauts.name,
+		EncounterSetsMap['Master of Time'].name
+	]
+}
 
+export const KreeFanatic : Expansion = {
+	name: "Kree Fanatic",
+	encounterSets:[
+		EncounterSetsMap['Kree Fanatic'].name,
+	]
+}
 // Good guys
 export const CaptainAmerica : Expansion = {
 	name: 'Captain America',
@@ -77,11 +97,6 @@ export const BlackWidow : Expansion = {
 
 export const Thor : Expansion = {
 	name: 'Thor',
-	encounterSets: [],
-}
-
-export const ScarletWitch : Expansion = {
-	name: 'Scarlet Witch',
 	encounterSets: [],
 }
 
@@ -100,14 +115,53 @@ export const DoctorStrange : Expansion = {
 	encounterSets: [],
 }
 
+export const Quicksilver : Expansion = {
+	name: 'Quicksilver',
+	encounterSets: [],
+}
+
+export const Antman : Expansion = {
+	name: 'Ant-Man',
+	encounterSets: [],
+}
+
+export const Wasp : Expansion = {
+	name: 'Wasp',
+	encounterSets: [],
+}
+
+export const ScarletWitch : Expansion = {
+	name: 'Scarlet Witch',
+	encounterSets: [],
+}
+
+export const Starlord : Expansion = {
+	name: 'Star-Lord',
+	encounterSets: [],
+}
+export const Gamora : Expansion = {
+	name: 'Gamora',
+	encounterSets: [],
+}
+export const Drax : Expansion = {
+	name: 'Drax',
+	encounterSets: [],
+}
+export const Venom : Expansion = {
+	name: 'Venom',
+	encounterSets: [],
+}
 export const ExpansionsMap : Record<string, Expansion> = {
 	// Expansions
 	[CoreSet.name]: CoreSet,
 	[RiseOfRedSkull.name]: RiseOfRedSkull,
+	[GalaxysMostWanted.name]: GalaxysMostWanted,
 
 	// Villain packs
 	[GreenGoblin.name]: GreenGoblin,
 	[WreckingCrew.name]: WreckingCrew,
+	[Kang.name]: Kang,
+	[KreeFanatic.name]: KreeFanatic,
 
 	// Hero packs
 	[BlackWidow.name]: BlackWidow,
@@ -117,6 +171,13 @@ export const ExpansionsMap : Record<string, Expansion> = {
 	[Thor.name]: Thor,
 	[MsMarvel.name]: MsMarvel,
 	[ScarletWitch.name]: ScarletWitch,
+	[Quicksilver.name]: Quicksilver,
+	[Antman.name]: Antman,
+	[Wasp.name]: Wasp,
+	[Starlord.name]: Starlord,
+	[Gamora.name]: Gamora,
+	[Drax.name]: Drax,
+	[Venom.name]: Venom,
 }
 
 export const ExpansionsList = Object.keys(ExpansionsMap).map(key => ExpansionsMap[key]).sort((a,b) => {

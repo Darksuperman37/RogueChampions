@@ -1,11 +1,11 @@
-import {generateExhaustedCardInPlay, generateUpgradeCard} from "@/lib/upgrades";
-import {ScarletWitch as Expansion} from "@/consts/expansions";
-import {ScarletWitch} from "@/consts/heroes";
+import {generateAllyCard, generateUpgradeCard, generateExhaustedCardInPlay} from "@/lib/upgrades";
+import {ScarletWitch as Exp} from "@/consts/expansions";
+import {ScarletWitch,Quicksilver} from "@/consts/heroes";
 
 export const Helmet = generateUpgradeCard({
 	name: 'Favorite Hat',
 	card: "Scarlet Witch's Crest",
-	requires: Expansion.name,
+	requires: Exp.name,
 	requiresHero: ScarletWitch.name,
 	category: "Heroic",
 	article: '',
@@ -14,7 +14,7 @@ export const Helmet = generateUpgradeCard({
 export const MagicShield = generateUpgradeCard({
 	name: 'Force Field',
 	card: "Magic Shield",
-	requires: Expansion.name,
+	requires: Exp.name,
 	requiresHero: ScarletWitch.name,
 	category: "Heroic",
 	article: '',
@@ -22,9 +22,9 @@ export const MagicShield = generateUpgradeCard({
 })
 
 export const Agatha = generateExhaustedCardInPlay({
-	name: 'Salem\'s Witch',
+	name: 'It was Agatha all along',
 	card: `Agatha Harkness`,
-	requires: Expansion.name,
+	requires: Exp.name,
 	requiresHero: ScarletWitch.name,
 	category: 'Heroic',
 	article: '',
@@ -32,17 +32,37 @@ export const Agatha = generateExhaustedCardInPlay({
 	pronoun: 'her',
 })
 
-
-export const Quicksilver = generateExhaustedCardInPlay({
-	name: 'Twinstinct',
-	card: `Quicksilver`,
-	requires: Expansion.name,
+export const Scarlet = generateUpgradeCard({
+	name: 'The Legend',
+	card: `The Sorcerer Supreme`,
+	requires: Exp.name,
 	requiresHero: ScarletWitch.name,
 	category: 'Heroic',
-	they: 'he',
 	article: '',
-	pronoun: 'him',
 })
 
 
-export const Upgrades = [Helmet, Agatha, Quicksilver, MagicShield]
+
+export const QS = generateAllyCard({
+	name: 'Twinstinct',
+	card: `Quicksilver`,
+	pronoun: 'he',
+	requires: Exp.name,
+	requiresHero: ScarletWitch.name,
+	levels: [{
+		damage: 1,
+		exhausted: true,
+	}, {
+		damage: 1,
+		exhausted: false,
+	}, {
+		damage: 0,
+		exhausted: false,
+	}],
+	category: 'Heroic',
+	conflictingHeroes: [Quicksilver.name],
+})
+
+
+
+export const Upgrades = [Helmet, Agatha, QS, MagicShield, Scarlet,]

@@ -38,12 +38,75 @@ export const Dangerous : Challenge = {
 	description: `<strong>Setup:</strong> Deal each player an encounter card.`
 }
 
+export const Tough : Challenge = {
+	name: 'Tough',
+	difficulty: DF_STEP_SMALL,
+	description: `<strong>Setup:</strong> Place a Tough status card on the villain.`
+}
+
+export const Overwhelmed : Challenge = {
+	name: 'Overwhelmed',
+	difficulty: DF_STEP_MED,
+	description: `<strong>Setup:</strong> Each player starts with the Confused status condition.`
+}
+
+export const Sucker : Challenge = {
+	name: 'Sucker Punched',
+	difficulty: DF_STEP_MED,
+	description: `<strong>Setup:</strong> Each player starts with the Stunned status condition.`
+}
+
+export const Slowstart : Challenge = {
+	name: 'Slow to Start',
+	difficulty: DF_STEP_MED,
+	description: `<strong>Setup:</strong> Each player exhausts their identity.`
+}
+
+export const Unprepared : Challenge = {
+	name: 'Unprepared',
+	difficulty: DF_STEP_LARGE,
+	description: `<strong>Setup:</strong> Each player's starting hand size is reduced by 1.`
+}
+
+export const Prior : Challenge = {
+	name: 'Prior Commitment',
+	difficulty: DF_STEP_SMALL,
+	description: `<strong>Setup:</strong> Each player declares a resource type.  Reveal cards from the top of your deck until you find a card with a matching resource.  Discard all cards revealed this way.`
+}
+
+export const Nemesis : Challenge = {
+	name: 'It just got worse',
+	difficulty: DF_STEP_LARGE,
+	description: `<strong>Setup:</strong> Each player reveals their nemesis minion and puts it into play engaged to them.  If defeated, return it to the set-aside encounter set.`
+}
+
+export const Crisis : Challenge = {
+	name: 'Crisis',
+	difficulty: DF_STEP_MED,
+	description: `<strong>Setup:</strong> Place threat on the main scheme equal to the amount that would be placed at the start of the villain phase (minimum 1 per player).`
+}
+
+export const Plotter : Challenge = {
+	name: 'Plotter',
+	difficulty: DF_STEP_MED,
+	description: `<strong>Setup:</strong> Discard cards from the encounter deck until a side scheme is discarded.  Reveal that side scheme.`
+}
+
 export const ChallengesList = [Devious,
 	Resilient,
 	Ambush,
 	Master,
 	Tenacious,
 	Dangerous,
+	Tough,
+	Overwhelmed,
+	Sucker,
+	Slowstart,
+	Unprepared,
+	Prior,
+	Nemesis,
+	Crisis,
+	Plotter,
 ]
 
 export const randomChallenge = () : Challenge => {
