@@ -98,7 +98,7 @@ export const Zola : Villain = {
 export const RedSkull : Villain = {
 	name: 'Red Skull',
 	key: 'RedSkull',
-	difficulty: DF_BASE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_SMALL,
 	sets: [EncounterSetsMap['Red Skull'].name],
 	extraSets: 0
 }
@@ -130,7 +130,7 @@ export const Escape : Villain = {
 export const Nebula : Villain = {
 	name: 'Nebula',
 	key: 'Nebula',
-	difficulty: DF_BASE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_LARGE, DF_STEP_MED,
 	sets: [EncounterSetsMap.Nebula.name],
 	extraSets: 0
 }
@@ -138,7 +138,7 @@ export const Nebula : Villain = {
 export const Ronan : Villain = {
 	name: 'Ronan',
 	key: 'Ronan',
-	difficulty: DF_BASE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_LARGE+ DF_STEP_LARGE,
 	sets: [EncounterSetsMap.Ronan.name],
 	extraSets: 0
 }

@@ -103,7 +103,7 @@ export const SpiderGirl = generateAllyCard({
 export const Tigra = generateAllyCard({
 	name: 'Cats Got Claws',
 	card: 'Tigra',
-	pronoun: 'she',
+	pronoun: 'her',
 	requires: CoreSet.name,
 	levels: [{
 		damage: 1,
@@ -121,7 +121,7 @@ export const Tigra = generateAllyCard({
 export const Brawn = generateAllyCard({
 	name: 'Who Needs Brains?',
 	card: 'Brawn',
-	pronoun: 'he',
+	pronoun: 'him',
 	requires: ExpansionsMap.Thor.name,
 	levels: [{
 		damage: 3,
@@ -142,7 +142,7 @@ export const Brawn = generateAllyCard({
 export const Bug = generateAllyCard({
 	name: 'The Rogue',
 	card: 'Bug',
-	pronoun: 'he',
+	pronoun: 'him',
 	requires: ExpansionsMap['The Galaxys Most Wanted'].name,
 	levels: [{
 		damage: 0,

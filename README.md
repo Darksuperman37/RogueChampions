@@ -11,10 +11,10 @@ A companion app for the [Marvel Champions Living Card Game](https://boardgamegee
 ## Website
 You can the site at https://darksuperman37.github.io/RogueChampions/
 
-# Original Creator
+## Original Creator
 Made by ShalePumpkin. Original code is loacated at: https://github.com/ShalePumpkin/RogueChampions
 
-# Changelog
+## Changelog
 
 ### 8/26/21
  - Added all heroes, villains, and modular sets up to Venom
