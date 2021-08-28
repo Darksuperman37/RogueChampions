@@ -130,7 +130,7 @@ export const Escape : Villain = {
 export const Nebula : Villain = {
 	name: 'Nebula',
 	key: 'Nebula',
-	difficulty: DF_BASE + DF_STEP_LARGE, DF_STEP_MED,
+	difficulty: DF_BASE + DF_STEP_LARGE+ DF_STEP_MED,
 	sets: [EncounterSetsMap.Nebula.name],
 	extraSets: 0
 }
