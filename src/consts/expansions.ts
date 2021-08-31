@@ -136,7 +136,7 @@ export const ScarletWitch : Expansion = {
 }
 
 export const Starlord : Expansion = {
-	name: 'Star-Lord',
+	name: 'Starlord',
 	encounterSets: [],
 }
 export const Gamora : Expansion = {
