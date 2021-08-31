@@ -70,7 +70,7 @@ export const WonderMan = generateAllyCard({
 export const Yondu = generateAllyCard({
 	name: `Mary Poppins Yall`,
 	card: 'Yondu',
-	requires: ExpansionsMap['Star-Lord'].name,
+	requires: ExpansionsMap['Starlord'].name,
 	pronoun: 'him',
 	category: "Leadership",
 	levels: [{
