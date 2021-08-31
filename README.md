@@ -16,13 +16,19 @@ Made by ShalePumpkin. Original code is loacated at: https://github.com/ShalePump
 
 ## Changelog
 
+### 8/31/21
+ - Fixed Issue with Star-Lord not showing up when selected
+ 
+ ### 8/28/21
+ - Increased difficult scores for Red Skull, Nebula, and Ronin so they don't come up as early
+ 
 ### 8/26/21
  - Added all heroes, villains, and modular sets up to Venom
  - Revamped difficulty 
  - Added more challenges
  - Added more upgrades to all heroes and aspects
  
- 
+
  
 
 

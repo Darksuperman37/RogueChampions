@@ -105,7 +105,7 @@ export const Wasp : Hero = {
 
 export const Starlord : Hero = {
 	name: 'Star-Lord',
-	requires: 'Starlord',
+	requires: 'Star-Lord',
 	startingHP: 10,
 }
 export const Gamora : Hero = {
