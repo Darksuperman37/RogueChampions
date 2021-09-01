@@ -17,7 +17,7 @@ import {Upgrades as hulk} from "@/consts/upgrades/heroes/hulk";
 import {Upgrades as hawkeye} from "@/consts/upgrades/heroes/hawkeye";
 import {Upgrades as spider_woman} from "@/consts/upgrades/heroes/spider-woman";
 import {Upgrades as antman} from "@/consts/upgrades/heroes/AntMan";
-import {Upgrades as wasp} from "@/consts/upgrades/heroes/Wasp";
+import {Upgrades as Wasp} from "@/consts/upgrades/heroes/Wasp";
 import {Upgrades as quicksilver} from "@/consts/upgrades/heroes/Quicksilver";
 import {Upgrades as scarlet_witch} from "@/consts/upgrades/heroes/scarletwitch";
 import {Upgrades as Starlord} from "@/consts/upgrades/heroes/starlord";
@@ -56,7 +56,7 @@ addUpgrades(hulk)
 addUpgrades(hawkeye)
 addUpgrades(spider_woman)
 addUpgrades(antman)
-addUpgrades(wasp)
+addUpgrades(Wasp)
 addUpgrades(scarlet_witch)
 addUpgrades(quicksilver)
 addUpgrades(Starlord)

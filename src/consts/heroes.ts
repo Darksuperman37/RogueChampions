@@ -151,6 +151,7 @@ export const HeroesMap : Record<string, Hero> = {
 	[ScarletWitch.name]: ScarletWitch,
 	[Quicksilver.name]: Quicksilver,
 	[Antman.name]: Antman,
+	[Wasp.name]: Wasp,
 	[Starlord.name]: Starlord,
 	[Gamora.name]: Gamora,
 	[Rocket.name]: Rocket,

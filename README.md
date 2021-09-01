@@ -17,7 +17,8 @@ Made by ShalePumpkin. Original code is loacated at: https://github.com/ShalePump
 ## Changelog
 
 ### 8/31/21
- - Fixed Issue with Star-Lord not showing up when selected
+ - Fixed Issue with Starlord not showing up when selected
+ - Fixed Issue with Wasp not showing up when selected
  
  ### 8/28/21
  - Increased difficult scores for Red Skull, Nebula, and Ronin so they don't come up as early
