@@ -151,6 +151,10 @@ export const Venom : Expansion = {
 	name: 'Venom',
 	encounterSets: [],
 }
+export const Nebula : Expansion = {
+	name: 'Nebula',
+	encounterSets: [],
+}
 export const ExpansionsMap : Record<string, Expansion> = {
 	// Expansions
 	[CoreSet.name]: CoreSet,
@@ -178,6 +182,7 @@ export const ExpansionsMap : Record<string, Expansion> = {
 	[Gamora.name]: Gamora,
 	[Drax.name]: Drax,
 	[Venom.name]: Venom,
+	[Nebula.name]: Nebula,
 }
 
 export const ExpansionsList = Object.keys(ExpansionsMap).map(key => ExpansionsMap[key]).sort((a,b) => {

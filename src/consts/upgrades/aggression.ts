@@ -85,20 +85,6 @@ export const Godslayer = generateExhaustedCardInPlay({
 	pronoun: 'it',
 })
 
-export const SpiderGirl = generateAllyCard({
-	name: 'Spider Friend',
-	card: 'Spider-Girl',
-	pronoun: 'she',
-	requires: RiseOfRedSkull.name,
-	levels: [{
-		damage: 0,
-		exhausted: true,
-	}, {
-		damage: 0,
-		exhausted: false,
-	}],
-	category: 'Aggression',
-})
 
 export const Tigra = generateAllyCard({
 	name: 'Cats Got Claws',
@@ -106,9 +92,6 @@ export const Tigra = generateAllyCard({
 	pronoun: 'her',
 	requires: CoreSet.name,
 	levels: [{
-		damage: 1,
-		exhausted: true,
-	}, {
 		damage: 1,
 		exhausted: false,
 	}, {
@@ -124,13 +107,7 @@ export const Brawn = generateAllyCard({
 	pronoun: 'him',
 	requires: ExpansionsMap.Thor.name,
 	levels: [{
-		damage: 3,
-		exhausted: true,
-	}, {
-		damage: 3,
-		exhausted: false,
-	}, {
-		damage: 1,
+		damage: 2,
 		exhausted: false,
 	}, {
 		damage: 0,
@@ -158,7 +135,6 @@ export const Upgrades = [
 	ValhallasBlessing,
 	CombatTraining,
 	TacTeam,
-	SpiderGirl,
 	Handcannon,
 	Godslayer,
 	Jarnbjorn,

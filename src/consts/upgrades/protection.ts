@@ -101,10 +101,7 @@ export const BlackWidowAlly = generateAllyCard({
 	card: 'Black Widow',
 	levels: [{
 		damage: 1,
-		exhausted: true,
-	}, {
-		damage: 0,
-		exhausted: true
+		exhausted: false
 	}, {
 		exhausted: false,
 		damage: 0
@@ -119,10 +116,7 @@ export const Ironfist = generateAllyCard({
 	card: 'Iron Fist',
 	levels: [{
 		damage: 1,
-		exhausted: true,
-	}, {
-		damage: 0,
-		exhausted: true
+		exhausted: false,
 	}, {
 		exhausted: false,
 		damage: 0
@@ -137,10 +131,7 @@ export const Luke = generateAllyCard({
 	card: 'Luke Cage',
 	levels: [{
 		damage: 1,
-		exhausted: true,
-	}, {
-		damage: 0,
-		exhausted: true
+		exhausted: false,
 	}, {
 		exhausted: false,
 		damage: 0

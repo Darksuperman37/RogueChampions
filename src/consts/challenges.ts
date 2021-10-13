@@ -92,6 +92,7 @@ export const Plotter : Challenge = {
 	description: `<strong>Setup:</strong> Discard cards from the encounter deck until a side scheme is discarded.  Reveal that side scheme.`
 }
 
+
 export const ChallengesList = [Devious,
 	Resilient,
 	Ambush,

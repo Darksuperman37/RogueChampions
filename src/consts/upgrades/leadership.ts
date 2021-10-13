@@ -31,6 +31,21 @@ export const Training = generateUpgradeCard({
 	category: 'Leadership'
 })
 
+export const Rapid = generateUpgradeCard({
+	name: 'Reinforcements',
+	card: 'Rapid Response',
+	article: '',
+	requires: ExpansionsMap['Black Widow'].name,
+	category: 'Leadership'
+})
+
+export const Guardians = generateUpgradeCard({
+	name: 'Guardians of the Galaxy',
+	card: 'Guardians of the Galaxy',
+	article: '',
+	requires: ExpansionsMap.Nebula.name,
+	category: 'Leadership'
+})
 
 export const IKnowAHawkeye = generateCounterCardInPlay({
 	name: 'I Know a Hawkeye',
@@ -48,24 +63,6 @@ export const IKnowAHawkeye = generateCounterCardInPlay({
 	conflictingHeroes: [Hawkeye.name],
 })
 
-export const WonderMan = generateAllyCard({
-	name: `Wonderful`,
-	card: 'Wonder Man',
-	requires: ExpansionsMap['Captain America'].name,
-	pronoun: 'him',
-	category: "Leadership",
-	levels: [{
-		damage: 0,
-		exhausted: true,
-	}, {
-		damage: 0,
-		exhausted: false,
-	}, {
-		damage: 0,
-		exhausted: false,
-		tough: true,
-	}]
-})
 
 export const Yondu = generateAllyCard({
 	name: `Mary Poppins Yall`,
@@ -104,11 +101,8 @@ export const Vision = generateAllyCard({
 	pronoun: 'him',
 	category: "Leadership",
 	levels: [{
-		damage: 1,
+		damage: 0,
 		exhausted: true,
-	}, {
-		damage: 1,
-		exhausted: false,
 	}, {
 		damage: 0,
 		exhausted: false,
@@ -117,11 +111,12 @@ export const Vision = generateAllyCard({
 
 export const Upgrades = [
 	IKnowAHawkeye, 
-	WonderMan, 
 	TheTriskelion,
 	Quinjet,
+	Rapid,
 	Training,
 	Yondu,
 	Agent,
 	Vision,
+	Guardians,
 	]

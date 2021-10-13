@@ -132,6 +132,40 @@ export const KnowYourEnemy = {
 	category: 'General' as UpgradeCategory
 }
 
+export const Conditions : any = {
+	name: 'Working on the Basics',
+	level: 1,
+	maxLevel: 2,
+	requires: ExpansionsMap['The Rise of Red Skull'].name,
+	repeat (level: number) : string {
+		return ['Basic', 'Improved'][level-1]
+	},
+	description () {
+		return `<strong>Setup:</strong> Select one of the <strong>${this.repeat(this.level)}</strong> Thwart/Attack/Defense/Recovery Upgrade Campaign cards and play it attached to your hero.`
+	},
+	levelUpMessage () {
+		return `Flip the card over`
+	},
+	category: 'General'
+}
+
+export const Market : any = {
+	name: 'Galactic Market',
+	level: 1,
+	maxLevel: 2,
+	requires: ExpansionsMap['The Galaxys Most Wanted'].name,
+	repeat (level: number) : string {
+		return ['4', '7'][level-1]
+	},
+	description () {
+		return `<strong>Setup:</strong> Add cards from the Campaign Market into your deck whose total unit cost does not exceed ${this.repeat(this.level)}`
+	},
+	levelUpMessage () {
+		return `Your budget is now ${this.repeat(this.level)} units.  You may return previously selected cards and choose different cards.`
+	},
+	category: 'General'
+}
+
 export const Upgrades = [
 	KnowYourEnemy,
 	Helicarrier,
@@ -145,5 +179,6 @@ export const Upgrades = [
 	Reflexes,
 	Pistol,
 	Exercise,
-	
+	Conditions,
+	Market,
 	]

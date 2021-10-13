@@ -16,7 +16,11 @@ Made by ShalePumpkin. Original code is loacated at: https://github.com/ShalePump
 
 ## Changelog
 
-### 8/31/21
+### 10/12/21
+ - Added Nebula
+ - Included Campaign specific upgrades
+ 
+ ### 8/31/21
  - Fixed Issue with Starlord not showing up when selected
  - Fixed Issue with Wasp not showing up when selected
  

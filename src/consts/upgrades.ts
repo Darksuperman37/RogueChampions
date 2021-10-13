@@ -26,6 +26,7 @@ import {Upgrades as Rocket} from "@/consts/upgrades/heroes/rocket";
 import {Upgrades as Groot} from "@/consts/upgrades/heroes/groot";
 import {Upgrades as Drax} from "@/consts/upgrades/heroes/drax";
 import {Upgrades as Venom} from "@/consts/upgrades/heroes/venom";
+import {Upgrades as Nebula} from "@/consts/upgrades/heroes/Nebula";
 
 import {Upgrade, UpgradeCategory} from "@/types/upgrade";
 
@@ -65,6 +66,7 @@ addUpgrades(Rocket)
 addUpgrades(Groot)
 addUpgrades(Drax)
 addUpgrades(Venom)
+addUpgrades(Nebula)
 
 
 export const UpgradesList = Object.keys(UpgradesMap).map(key => {

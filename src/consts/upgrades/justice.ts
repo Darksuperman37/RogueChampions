@@ -84,15 +84,12 @@ export const Interrogation = generateUpgradeCard({
 	exhausted: true,
 })
 
-export const Jessica = generateAllyCard({
-	name: 'Alias Investigations',
-	card: 'Jessica Jones',
-	pronoun: 'she',
-	requires: CoreSet.name,
+export const Wraith = generateAllyCard({
+	name: 'The Kree With No Name',
+	card: 'Wraith',
+	pronoun: 'him',
+	requires: ExpansionsMap.Nebula.name,
 	levels: [{
-		damage: 1,
-		exhausted: true,
-	}, {
 		damage: 1,
 		exhausted: false,
 	}, {
@@ -104,18 +101,12 @@ export const Jessica = generateAllyCard({
 export const Devil = generateAllyCard({
 	name: 'Devil of Hells Kitchen',
 	card: 'Daredevil',
-	pronoun: 'he',
+	pronoun: 'him',
 	requires: CoreSet.name,
 	levels: [{
-		damage: 2,
-		exhausted: true,
-	}, {
-		damage: 1,
-		exhausted: true,
-	},{
 		damage: 1,
 		exhausted: false,
-	}, {
+	},{
 		damage: 0,
 		exhausted: false,
 	}],
@@ -125,12 +116,9 @@ export const Devil = generateAllyCard({
 export const Jack = generateAllyCard({
 	name: 'Raise the Flag',
 	card: 'Jack Flag',
-	pronoun: 'he',
+	pronoun: 'him',
 	requires: ExpansionsMap.Venom.name,
 	levels: [{
-		damage: 1,
-		exhausted: true,
-	}, {
 		damage: 1,
 		exhausted: false,
 	}, {
@@ -150,7 +138,7 @@ export const Upgrades = [
 	PI,
 	Cop,
 	Interrogation,
-	Jessica,
+	Wraith,
 	Devil,
 	Jack,
 	
