@@ -182,8 +182,9 @@ export const generateGames = (expansions: Array<Expansion>): Game[] => {
 export const getGameDifficulty = (game: Game): number => {
     let diff = game.villain.difficulty
     let multiplier = 1
+
     game.encounterSets.forEach((set) => {
-        diff += set.difficulty
+			diff += set.difficulty
     })
 
     game.challenges.forEach((cha) => {

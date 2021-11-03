@@ -1,12 +1,12 @@
 import {Villain} from "@/types/villain";
 import {EncounterSetsMap} from "@/consts/encountersets";
 import {ExpansionsMap} from "@/consts/expansions";
-import {DF_BASE, DF_STEP_LARGE, DF_STEP_MED, DF_STEP_SMALL} from "@/consts/difficulty";
+import {DF_BASE, DF_STEP_LARGE, DF_STEP_SMALL, DF_STEP_MED} from "@/consts/difficulty";
 
 // BASE GAME
 export const Ultron : Villain = {
 	name: 'Ultron',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED,
 	key: 'ultron',
 	sets: [EncounterSetsMap.Ultron.name],
 	extraSets: 0
@@ -23,7 +23,7 @@ export const Rhino : Villain = {
 export const Klaw : Villain = {
 	name: 'Klaw',
 	key: 'klaw',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap.Klaw.name],
 	extraSets: 0
 }
@@ -41,7 +41,7 @@ export const WreckingCrew : Villain = {
 export const GreenGoblin : Villain = {
 	name: 'Mutagen Formula',
 	key: 'GreenGoblin',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_SMALL,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap['Mutagen Formula'].name],
 	extraSets: 0
 }
@@ -57,7 +57,7 @@ export const NormanOsborn : Villain = {
 export const Kang : Villain = {
 	name: 'Kang',
 	key: 'Kang',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap.Kang.name],
 	extraSets: 0
 }
@@ -66,15 +66,15 @@ export const Kang : Villain = {
 export const Crossbones : Villain = {
 	name: 'Crossbones',
 	key: 'Crossbones',
-	difficulty: DF_BASE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED,
 	sets: [EncounterSetsMap.Crossbones.name],
-	extraSets: 0
+	extraSets: 2
 }
 
 export const AbsorbingMan : Villain = {
 	name: 'Absorbing Man',
 	key: 'AbsorbingMan',
-	difficulty: DF_BASE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED,
 	sets: [EncounterSetsMap['Absorbing Man'].name],
 	extraSets: 0
 }
@@ -82,7 +82,7 @@ export const AbsorbingMan : Villain = {
 export const Taskmaster : Villain = {
 	name: 'Taskmaster',
 	key: 'Taskmaster',
-	difficulty: DF_BASE  + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE  + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap.Taskmaster.name],
 	extraSets: 0
 }
@@ -90,7 +90,7 @@ export const Taskmaster : Villain = {
 export const Zola : Villain = {
 	name: 'Zola',
 	key: 'Zola',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_SMALL,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap.Zola.name],
 	extraSets: 0
 }
@@ -98,15 +98,15 @@ export const Zola : Villain = {
 export const RedSkull : Villain = {
 	name: 'Red Skull',
 	key: 'RedSkull',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap['Red Skull'].name],
-	extraSets: 0
+	extraSets: 1
 }
 
 export const Drang : Villain = {
 	name: 'Brotherhood of Badoon',
 	key: 'Drang',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap['Brotherhood of Badoon'].name],
 	extraSets: 0
 }
@@ -114,7 +114,7 @@ export const Drang : Villain = {
 export const Infiltrate : Villain = {
 	name: 'Infiltrate the Museum',
 	key: 'Infiltrate',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap['Infiltrate the Museum'].name],
 	extraSets: 0
 }
@@ -122,7 +122,7 @@ export const Infiltrate : Villain = {
 export const Escape : Villain = {
 	name: 'Escape the Museum',
 	key: 'Escape',
-	difficulty: DF_BASE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED,
 	sets: [EncounterSetsMap['Escape the Museum'].name],
 	extraSets: 0
 }
@@ -130,7 +130,7 @@ export const Escape : Villain = {
 export const Nebula : Villain = {
 	name: 'Nebula',
 	key: 'Nebula',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap.Nebula.name],
 	extraSets: 0
 }
@@ -138,7 +138,7 @@ export const Nebula : Villain = {
 export const Ronan : Villain = {
 	name: 'Ronan',
 	key: 'Ronan',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap.Ronan.name],
 	extraSets: 0
 }
@@ -146,15 +146,15 @@ export const Ronan : Villain = {
 export const Ebony : Villain = {
 	name: 'Ebony Maw',
 	key: 'Ebony',
-	difficulty: DF_BASE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED,
 	sets: [EncounterSetsMap['Ebony Maw'].name],
-	extraSets: 0
+	extraSets: 1
 }
 
 export const Tower : Villain = {
 	name: 'Tower Defense',
 	key: 'Tower',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap['Tower Defense'].name],
 	extraSets: 0
 }
@@ -162,25 +162,25 @@ export const Tower : Villain = {
 export const Thanos : Villain = {
 	name: 'Thanos',
 	key: 'Thanos',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap['Thanos'].name],
-	extraSets: 0
+	extraSets: 1
 }
 
 export const Hela : Villain = {
 	name: 'Hela',
 	key: 'Hela',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap['Hela'].name],
-	extraSets: 0
+	extraSets: 1
 }
 
 export const Loki : Villain = {
 	name: 'Loki',
 	key: 'Loki',
-	difficulty: DF_BASE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE + DF_STEP_LARGE,
+	difficulty: DF_BASE + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED + DF_STEP_MED,
 	sets: [EncounterSetsMap['Loki'].name],
-	extraSets: 0
+	extraSets: 1
 }
 export const VillainsMap : Record<string, Villain> = {
 	[Ultron.name]: Ultron,
