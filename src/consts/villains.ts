@@ -205,7 +205,6 @@ export const VillainsMap : Record<string, Villain> = {
 	[Thanos.name]: Thanos,
 	[Hela.name]: Hela,
 	[Loki.name]: Loki,
-	
 }
 
 export const VillainsList = Object.keys(VillainsMap).map(key => VillainsMap[key]).sort((a,b) => {
