@@ -9,13 +9,16 @@ A companion app for the [Marvel Champions Living Card Game](https://boardgamegee
  - Choose to either heal or level up your upgrades after a mission
 
 ## Website
-You can the site at https://darksuperman37.github.io/RogueChampions/
+You can view the site at https://darksuperman37.github.io/RogueChampions/
 
 ## Original Creator
-Made by ShalePumpkin. Original code is loacated at: https://github.com/ShalePumpkin/RogueChampions
+Made by ShalePumpkin. Original code is located at: https://github.com/ShalePumpkin/RogueChampions
 
 ## Changelog
 
+### 10/12/21
+ - Added Content from Mad Titan's Shadow
+ 
 ### 10/12/21
  - Added Nebula
  - Included Campaign specific upgrades

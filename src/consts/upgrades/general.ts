@@ -80,6 +80,22 @@ export const Exercise = generateExhaustedCardInPlay({
 	category: 'General',
 })
 
+export const Rumble = generateUpgradeCard({
+	name: 'Itchin for a Fight',
+	card: 'Ready to Rumble',
+	requires: ExpansionsMap['The Mad Titans Shadow'].name,
+	category: 'General',
+	attached: true,
+})
+
+export const Norn = generateUpgradeCard({
+	name: 'Ancient Power',
+	card: 'Norn Stone',
+	requires: ExpansionsMap['The Mad Titans Shadow'].name,
+	category: 'General',
+	attached: true,
+})
+
 export const AlwaysPrepared : Upgrade = {
 	name: `Always Prepared`,
 	description () {
@@ -166,6 +182,22 @@ export const Market : any = {
 	category: 'General'
 }
 
+export const Shawarma : any = {
+	name: 'Grabbing a Bite',
+	level: 1,
+	maxLevel: 1,
+	requires: ExpansionsMap['The Mad Titans Shadow'].name,
+	repeat (level: number) : string {
+		return ['Basic', 'Improved'][level-1]
+	},
+	description () {
+		return `<strong>Setup:</strong> Shuffle a <strong>Shawarma</strong> into your deck.`
+	},
+
+	category: 'General'
+}
+
+
 export const Upgrades = [
 	KnowYourEnemy,
 	Helicarrier,
@@ -181,4 +213,7 @@ export const Upgrades = [
 	Exercise,
 	Conditions,
 	Market,
+	Rumble,
+	Norn,
+	Shawarma,
 	]

@@ -50,6 +50,25 @@ export const GalaxysMostWanted : Expansion = {
 		EncounterSetsMap.Ronan.name,
 	]
 }
+
+export const MadTitansShadow : Expansion = {
+	name: 'The Mad Titans Shadow',
+	encounterSets: [
+		EncounterSetsMap['The Black Order'].name,
+		EncounterSetsMap['Armies of Titan'].name,
+		EncounterSetsMap['Children of Thanos'].name,
+		EncounterSetsMap['Infinity Gauntlet'].name,
+		EncounterSetsMap['Legions of Hel'].name,
+		EncounterSetsMap['Frost Giants'].name,
+		EncounterSetsMap['Enchantress'].name,
+
+		EncounterSetsMap['Ebony Maw'].name,
+		EncounterSetsMap['Tower Defense'].name,
+		EncounterSetsMap['Thanos'].name,
+		EncounterSetsMap['Hela'].name,
+		EncounterSetsMap['Loki'].name,
+	]
+}
 //Villains
 export const GreenGoblin : Expansion = {
 	name: 'Green Goblin',
@@ -160,6 +179,7 @@ export const ExpansionsMap : Record<string, Expansion> = {
 	[CoreSet.name]: CoreSet,
 	[RiseOfRedSkull.name]: RiseOfRedSkull,
 	[GalaxysMostWanted.name]: GalaxysMostWanted,
+	[MadTitansShadow.name]: MadTitansShadow,
 
 	// Villain packs
 	[GreenGoblin.name]: GreenGoblin,

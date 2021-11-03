@@ -104,7 +104,31 @@ export const Ronan : EncounterSet = {
 	difficulty: 0,
 	boss: true
 }
-
+export const Ebony : EncounterSet = {
+	name: 'Ebony Maw',
+	difficulty: 0,
+	boss: true
+}
+export const Tower : EncounterSet = {
+	name: 'Tower Defense',
+	difficulty: 0,
+	boss: true
+}
+export const Thanos : EncounterSet = {
+	name: 'Thanos',
+	difficulty: 0,
+	boss: true
+}
+export const Hela : EncounterSet = {
+	name: 'Hela',
+	difficulty: 0,
+	boss: true
+}
+export const Loki : EncounterSet = {
+	name: 'Loki',
+	difficulty: 0,
+	boss: true
+}
 
 //Modular Sets
 export const GoblinGimmicks : EncounterSet = {
@@ -253,6 +277,48 @@ export const KreeFanatic  : EncounterSet = {
 	boss: false
 }
 
+export const BlackOrder  : EncounterSet = {
+	name: 'The Black Order',
+	difficulty: DF_STEP_MED,
+	boss: false
+}
+
+export const ArmiesTitan  : EncounterSet = {
+	name: 'Armies of Titan',
+	difficulty: DF_STEP_SMALL,
+	boss: false
+}
+
+export const ChildrenThanos  : EncounterSet = {
+	name: 'Children of Thanos',
+	difficulty: DF_STEP_LARGE,
+	boss: false
+}
+
+export const Gauntlet  : EncounterSet = {
+	name: 'Infinity Gauntlet',
+	difficulty: DF_STEP_LARGE,
+	boss: false
+}
+
+export const LegionsHel  : EncounterSet = {
+	name: 'Legions of Hel',
+	difficulty: DF_STEP_SMALL,
+	boss: false
+}
+
+export const FrostGiants  : EncounterSet = {
+	name: 'Frost Giants',
+	difficulty: DF_STEP_LARGE,
+	boss: false
+}
+
+export const Enchantress  : EncounterSet = {
+	name: 'Enchantress',
+	difficulty: DF_STEP_MED,
+	boss: false
+}
+
 export const EncounterSetsMap : Record<string, EncounterSet> = {
 	[Rhino.name]: Rhino,
 	[Klaw.name]: Klaw,
@@ -274,6 +340,12 @@ export const EncounterSetsMap : Record<string, EncounterSet> = {
 	[EscapetheMuseum.name]: EscapetheMuseum,
 	[Nebula.name]: Nebula,
 	[Ronan.name]: Ronan,
+	
+	[Ebony.name]: Ebony,
+	[Tower.name]: Tower,
+	[Thanos.name]: Thanos,
+	[Hela.name]: Hela,
+	[Loki.name]: Loki,
 	
 	[TheDoomsdayChair.name]: TheDoomsdayChair,
 	[LegionOfHydra.name]: LegionOfHydra,
@@ -304,6 +376,14 @@ export const EncounterSetsMap : Record<string, EncounterSet> = {
 	[SpacePirates.name]: SpacePirates,
 	[ShipCommand.name]: ShipCommand,	
 	[BadoonHeadhunter.name]: BadoonHeadhunter,
+	
+	[BlackOrder.name]: BlackOrder,
+	[ArmiesTitan.name]: ArmiesTitan,
+	[ChildrenThanos.name]: ChildrenThanos,
+	[Gauntlet.name]: Gauntlet,
+	[LegionsHel.name]: LegionsHel,
+	[FrostGiants.name]: FrostGiants,	
+	[Enchantress.name]: Enchantress,
 }
 
 export let EncounterSetsList = Object.keys(EncounterSetsMap).map(key => EncounterSetsMap[key])

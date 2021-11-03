@@ -1,5 +1,5 @@
 import {generateAllyCard, generateUpgradeCard, generateExhaustedCardInPlay} from "@/lib/upgrades";
-import {ScarletWitch as Exp} from "@/consts/expansions";
+import {ScarletWitch as Exp, DoctorStrange} from "@/consts/expansions";
 import {ScarletWitch,Quicksilver} from "@/consts/heroes";
 
 export const Helmet = generateUpgradeCard({
@@ -35,7 +35,7 @@ export const Agatha = generateExhaustedCardInPlay({
 export const Scarlet = generateUpgradeCard({
 	name: 'The Legend',
 	card: `The Sorcerer Supreme`,
-	requires: Exp.name,
+	requires: DoctorStrange.name,
 	requiresHero: ScarletWitch.name,
 	category: 'Heroic',
 	article: '',

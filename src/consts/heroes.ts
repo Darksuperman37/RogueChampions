@@ -138,6 +138,16 @@ export const Nebula : Hero = {
 	requires: 'Nebula',
 	startingHP: 9,
 }
+export const Adam : Hero = {
+	name: 'Adam Warlock',
+	requires: 'The Mad Titans Shadow',
+	startingHP: 11,
+}
+export const Spectrum : Hero = {
+	name: 'Spectrum',
+	requires: 'The Mad Titans Shadow',
+	startingHP: 11,
+}
 
 export const HeroesMap : Record<string, Hero> = {
 	[BlackPanther.name]: BlackPanther,
@@ -164,6 +174,8 @@ export const HeroesMap : Record<string, Hero> = {
 	[Drax.name]: Drax,
 	[Venom.name]: Venom,
 	[Nebula.name]: Nebula,
+	[Adam.name]: Adam,
+	[Spectrum.name]: Spectrum,
 }
 
 export const HeroesList = Object.keys(HeroesMap).

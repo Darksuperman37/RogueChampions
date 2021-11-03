@@ -1,4 +1,4 @@
-import {CoreSet, ExpansionsMap, } from "@/consts/expansions";
+import {CoreSet, ExpansionsMap,MadTitansShadow, } from "@/consts/expansions";
 import {generateAllyCard, generateCounterCardInPlay, generateUpgradeCard,generateExhaustedCardInPlay} from "@/lib/upgrades";
 import {Hawkeye} from "@/consts/heroes";
 
@@ -44,6 +44,13 @@ export const Guardians = generateUpgradeCard({
 	card: 'Guardians of the Galaxy',
 	article: '',
 	requires: ExpansionsMap.Nebula.name,
+	category: 'Leadership'
+})
+export const Avengers = generateUpgradeCard({
+	name: 'Avengers Assemble!',
+	card: 'Mighty Avengers',
+	article: '',
+	requires: MadTitansShadow.name,
 	category: 'Leadership'
 })
 
@@ -109,6 +116,21 @@ export const Vision = generateAllyCard({
 	}]
 })
 
+export const CaptainAmerica = generateAllyCard({
+	name: `I Can Do This All Day`,
+	card: 'Captain America',
+	requires: MadTitansShadow.name,
+	pronoun: 'him',
+	category: "Leadership",
+	levels: [{
+		damage: 0,
+		exhausted: true,
+	}, {
+		damage: 0,
+		exhausted: false,
+	}]
+})
+
 export const Upgrades = [
 	IKnowAHawkeye, 
 	TheTriskelion,
@@ -119,4 +141,6 @@ export const Upgrades = [
 	Agent,
 	Vision,
 	Guardians,
+	CaptainAmerica,
+	Avengers,
 	]
